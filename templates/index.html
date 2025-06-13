@@ -1,22 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Character Pyramid</title>
+  <title>Pirámide de Personajes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>Character Pyramid</h1>
+  <h1>Pirámide de Personajes</h1>
   <div class="pyramid">
     {% for level, chars in levels %}
     <div class="level level-{{ level }}">
       {% for c in chars %}
       <div class="character">
         <div class="name">{{ c.name }}</div>
-        <div class="votes">Votes: {{ votes[c.id] }}</div>
+        <div class="votes">Votos: {{ votes[c.id] }}</div>
         <form action="{{ url_for('vote', char_id=c.id) }}" method="post">
-          <button type="submit">Vote</button>
+          <button type="submit">Votar</button>
         </form>
       </div>
       {% endfor %}

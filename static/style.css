@@ -24,9 +24,19 @@ body {
   background: #f9f9f9;
   border-radius: 5px;
   width: 120px;
+  max-width: 200px;
 }
 
 button {
   margin-top: 5px;
   padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  .level {
+    flex-direction: column;
+  }
+  .character {
+    width: 100%;
+  }
 }

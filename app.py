@@ -40,7 +40,7 @@ def count_votes(data):
     return counts
 
 
-@ app.route('/')
+@app.route('/')
 def index():
     data = load_data()
     votes = count_votes(data)
@@ -51,7 +51,7 @@ def index():
     return render_template('index.html', levels=sorted(chars_by_level.items()), votes=votes)
 
 
-@ app.route('/vote/<int:char_id>', methods=['POST'])
+@app.route('/vote/<int:char_id>', methods=['POST'])
 def vote(char_id):
     data = load_data()
     data["votes"].append({"character_id": char_id, "timestamp": time.time()})

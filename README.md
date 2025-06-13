@@ -1,17 +1,20 @@
-# Character Pyramid Website
+# Sitio de la Pirámide de Personajes
 
-This project is a simple Flask-based web application that displays a hierarchy of characters in a pyramid layout. Visitors can vote for their favorite characters. Votes are only counted for one week from when they were cast.
+Este proyecto es una aplicación web sencilla creada con **Flask** que muestra una
+pirámide de personajes organizados por niveles jerárquicos. Los visitantes pueden
+votar por cada personaje y los votos solo se cuentan durante una semana desde su
+emisión.
 
-## Setup
+## Instalación y uso
 
-1. Install dependencies:
+1. Instala las dependencias:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Run the application:
+2. Ejecuta la aplicación:
    ```bash
    python app.py
    ```
 
-Visit `http://localhost:5000/` in your browser to view the site.
+Abre `http://localhost:5000/` en tu navegador para ver el sitio.
